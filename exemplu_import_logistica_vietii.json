@@ -1,0 +1,14 @@
+{
+  "titlu": "Logistica Vietii",
+  "scenariu": "Patologic oncologic",
+  "note": "Set date prezentare",
+  "surse": ["Sector A", "Sector B", "Sector C"],
+  "destinatii": ["Creier", "Inima", "Rinichi", "Ficat", "Tumora"],
+  "matrice_costuri": [
+    [4, 6, 8, 7, 1],
+    [5, 4, 7, 6, 2],
+    [6, 5, 5, 4, 1]
+  ],
+  "disponibil": [40, 35, 25],
+  "necesar": [20, 18, 20, 22, 20]
+}

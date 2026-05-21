@@ -1,0 +1,114 @@
+[33m76acd27[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m Merge branch 'main' of https://github.com/adypicolo/PROIECT_SCSS a
+[33mb24db55[m final verion
+ .gitignore | 43 [32m+++++++++++++++++++++++++++++++++++++++++++[m
+ 1 file changed, 43 insertions(+)
+[33m494f4e6[m final verion
+ ...\223\303\262\303\241\342\224\254\302\254ii.pdf" | 285840 [31m------------------[m
+ README.md                                          |      3 [32m+[m[31m-[m
+ 2 files changed, 2 insertions(+), 285841 deletions(-)
+[33mc97f4dc[m final verion
+ Transport_Logistica_Vietii 2.zip               | Bin [31m157114514[m -> [32m0[m bytes
+ core/__pycache__/data_io.cpython-313.pyc       | Bin [31m46717[m -> [32m52088[m bytes
+ core/__pycache__/epsilon_math.cpython-313.pyc  | Bin [31m5157[m -> [32m4945[m bytes
+ core/__pycache__/solver.cpython-313.pyc        | Bin [31m9341[m -> [32m9283[m bytes
+ core/data_io.py                                | 247 [32m++++++++++++++++[m[31m---------[m
+ core/epsilon_math.py                           |  10 [32m+[m[31m-[m
+ core/solver.py                                 |  10 [32m+[m[31m-[m
+ exemplu_import_logistica_vietii.json           |   2 [32m+[m[31m-[m
+ imgs/logistica_vietii_1.png                    | Bin [31m0[m -> [32m830653[m bytes
+ imgs/logistica_vietii_2.png                    | Bin [31m0[m -> [32m372810[m bytes
+ main.py                                        |   3 [32m+[m[31m-[m
+ ui/__pycache__/app.cpython-313.pyc             | Bin [31m35634[m -> [32m35912[m bytes
+ ui/__pycache__/graph_view.cpython-313.pyc      | Bin [31m19134[m -> [32m17631[m bytes
+ ui/__pycache__/table_view.cpython-313.pyc      | Bin [31m11905[m -> [32m11793[m bytes
+ ui/app.py                                      |  40 [32m+[m[31m---[m
+ ui/graph_view.py                               |  74 [32m+[m[31m-------[m
+ ui/table_view.py                               |  11 [32m+[m[31m-[m
+ utils/__pycache__/cycle_finder.cpython-313.pyc | Bin [31m2330[m -> [32m2011[m bytes
+ utils/cycle_finder.py                          |  23 [32m+[m[31m--[m
+ web/app.js                                     |  24 [32m++[m[31m-[m
+ web/assets/project-logos.png                   | Bin [31m96543[m -> [32m61657[m bytes
+ web/favicon.ico                                | Bin [31m0[m -> [32m4286[m bytes
+ web/index.html                                 |   2 [32m+[m
+ web/styles.css                                 |   7 [32m+[m
+ webapp.py                                      |  22 [32m+[m[31m--[m
+ 25 files changed, 207 insertions(+), 268 deletions(-)
+[33m047adcf[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Update README.md
+ README.md | 4 [32m++[m[31m--[m
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+[33mf71e2a4[m Add files via upload
+ imgs/logistica_vietii_1.png | Bin [31m0[m -> [32m830653[m bytes
+ imgs/logistica_vietii_2.png | Bin [31m0[m -> [32m372810[m bytes
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+[33m6430522[m Delete Logistica VietΓòá┬¬ii.pdf
+ ...\223\303\262\303\241\342\224\254\302\254ii.pdf" | 285840 [31m------------------[m
+ 1 file changed, 285840 deletions(-)
+[33m73acee5[m Delete imgs
+ imgs | 1 [31m-[m
+ 1 file changed, 1 deletion(-)
+[33mb8c931e[m Create imgs
+ imgs | 1 [32m+[m
+ 1 file changed, 1 insertion(+)
+[33mcc0534d[m Update README.md
+ README.md | 3 [32m++[m[31m-[m
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+[33m570554a[m Merge branch 'main' of https://github.com/adypicolo/PROIECT_SCSS resolve "Merge branch 'main'
+[33m34d66b3[m template
+ Transport_Logistica_Vietii 2.zip | Bin [31m0[m -> [32m157114514[m bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+[33m098d3d2[m Update README.md
+ README.md | 3 [32m+++[m
+ 1 file changed, 3 insertions(+)
+[33m735fb0b[m Update README.md
+ README.md | 2 [32m+[m[31m-[m
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[33mbacfe7a[m Update README.md
+ README.md | 1 [31m-[m
+ 1 file changed, 1 deletion(-)
+[33ma738a8d[m Update README.md
+ README.md | 2 [32m+[m[31m-[m
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[33m341ad8d[m Update README.md
+ README.md | 41 [32m+++++++++++++++++++++++++++++++++++++[m[31m----[m
+ 1 file changed, 37 insertions(+), 4 deletions(-)
+[33mc492b1d[m BETA VERSION
+ Cardo-Bold.ttf                                     |    Bin [31m0[m -> [32m340804[m bytes
+ ...\223\303\262\303\241\342\224\254\302\254ii.pdf" | 285840 [32m++++++++++++++++++[m
+ ...\223\303\262\303\241\342\224\254\302\254ii.png" |    Bin [31m0[m -> [32m96543[m bytes
+ README.md                                          |    195 [32m+[m
+ TT Fors Trial Light.ttf                            |    Bin [31m0[m -> [32m153688[m bytes
+ core/__pycache__/data_io.cpython-312.pyc           |    Bin [31m0[m -> [32m39617[m bytes
+ core/__pycache__/data_io.cpython-313.pyc           |    Bin [31m0[m -> [32m46717[m bytes
+ core/__pycache__/epsilon_math.cpython-312.pyc      |    Bin [31m0[m -> [32m4979[m bytes
+ core/__pycache__/epsilon_math.cpython-313.pyc      |    Bin [31m0[m -> [32m5157[m bytes
+ core/__pycache__/solver.cpython-312.pyc            |    Bin [31m0[m -> [32m9188[m bytes
+ core/__pycache__/solver.cpython-313.pyc            |    Bin [31m0[m -> [32m9341[m bytes
+ core/data_io.py                                    |    864 [32m+[m
+ core/epsilon_math.py                               |     78 [32m+[m
+ core/solver.py                                     |    183 [32m+[m
+ exemplu_import_logistica_vietii.json               |     14 [32m+[m
+ main.py                                            |     11 [32m+[m
+ requirements.txt                                   |      7 [32m+[m
+ start.bat                                          |     45 [32m+[m
+ start.sh                                           |     36 [32m+[m
+ start_web.bat                                      |      4 [32m+[m
+ start_web.sh                                       |      3 [32m+[m
+ ui/__pycache__/app.cpython-312.pyc                 |    Bin [31m0[m -> [32m35754[m bytes
+ ui/__pycache__/app.cpython-313.pyc                 |    Bin [31m0[m -> [32m35634[m bytes
+ ui/__pycache__/graph_view.cpython-312.pyc          |    Bin [31m0[m -> [32m16291[m bytes
+ ui/__pycache__/graph_view.cpython-313.pyc          |    Bin [31m0[m -> [32m19134[m bytes
+ ui/__pycache__/table_view.cpython-312.pyc          |    Bin [31m0[m -> [32m11815[m bytes
+ ui/__pycache__/table_view.cpython-313.pyc          |    Bin [31m0[m -> [32m11905[m bytes
+ ui/app.py                                          |    481 [32m+[m
+ ui/graph_view.py                                   |    384 [32m+[m
+ ui/table_view.py                                   |    204 [32m+[m
+ utils/__pycache__/cycle_finder.cpython-312.pyc     |    Bin [31m0[m -> [32m2343[m bytes
+ utils/__pycache__/cycle_finder.cpython-313.pyc     |    Bin [31m0[m -> [32m2330[m bytes
+ utils/cycle_finder.py                              |     61 [32m+[m
+ web/app.js                                         |   1542 [32m+[m
+ web/assets/presentation-theme.png                  |    Bin [31m0[m -> [32m2414584[m bytes
+ web/assets/project-logos.png                       |    Bin [31m0[m -> [32m96543[m bytes
+ web/index.html                                     |    228 [32m+[m
+ web/styles.css                                     |    796 [32m+[m
+ webapp.py                                          |    506 [32m+[m
+ 39 files changed, 291482 insertions(+)

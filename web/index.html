@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="ro">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Logistica Vieții | Analiza și Optimizarea Fluxurilor de Distribuție</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico?v=2" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=2" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="theme-backdrop" aria-hidden="true"></div>
+
+  <div class="crm-container">
+    <aside class="crm-sidebar">
+      <div class="sidebar-header">
+        <div class="brand-text">
+          <span class="brand-name">Logistica Vieții</span>
+          <span class="brand-sub" style="white-space: normal; line-height: 1.3; margin-top: 4px;">Analiza și Optimizarea
+            Fluxurilor de Distribuție</span>
+        </div>
+      </div>
+
+      <div class="sidebar-views">
+        <div class="nav-section">Zona principala</div>
+        <button class="view-nav-btn is-active" type="button" data-view-trigger="main">
+          <svg class="view-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7h16M4 12h10M4 17h7" />
+          </svg>
+          <span>Initializare Date</span>
+        </button>
+        <button class="view-nav-btn" type="button" data-view-trigger="charts">
+          <svg class="view-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 19V9m7 10V5m7 14v-7" />
+          </svg>
+          <span>Grafice</span>
+        </button>
+        <button class="view-nav-btn doctor-ai-btn" type="button" data-view-trigger="doctor-ai">
+          <svg class="view-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-3-3v6m8-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <span>Doctor AI</span>
+        </button>
+      </div>
+
+      <nav class="sidebar-nav" aria-label="Navigare principală">
+        <div class="nav-section">Date & Optimizare</div>
+        <button id="sampleBtn" class="nav-item">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+          Încarcă Date Prezentare
+        </button>
+        <label class="nav-item upload-btn-wrapper">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+          </svg>
+          Import JSON / CSV
+          <input id="fileInput" type="file" accept=".json,.csv,.txt" hidden />
+        </label>
+      </nav>
+
+      <div class="sidebar-actions">
+        <div class="nav-section">Rulare și Export</div>
+        <button id="solveBtn" class="btn-primary">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          Rulează Optimizarea
+        </button>
+        <div class="export-group">
+          <button id="exportJsonBtn" class="btn-secondary export-btn" title="Export JSON">
+            <svg class="export-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h8M8 12h5m-5 5h8M7 3h10a2 2 0 012 2v14a2 2 0 01-2 2H7a2 2 0 01-2-2V5a2 2 0 012-2z" />
+            </svg>
+            <span>JSON</span>
+          </button>
+          <button id="exportPdfBtn" class="btn-secondary export-btn" title="Export PDF">
+            <svg class="export-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 3h7l5 5v11a2 2 0 01-2 2H7a2 2 0 01-2-2V5a2 2 0 012-2z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 3v5h5" />
+            </svg>
+            <span>PDF</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="sidebar-footer"
+        style="padding: 16px; display: flex; justify-content: center; align-items: center; background: transparent; border-top: 1px solid var(--border-subtle);">
+        <img src="assets/project-logos.png" alt="Logouri facultăți"
+          style="max-width: 88%; height: auto; opacity: 1; filter: none; transition: var(--transition);"
+          onmouseover="this.style.opacity='1'; this.style.filter='none';"
+          onmouseout="this.style.opacity='1'; this.style.filter='none';" />
+      </div>
+    </aside>
+    <button id="sidebarToggle" class="sidebar-toggle" type="button" aria-label="Retrage bara laterală"
+      aria-expanded="true" title="Retrage bara laterală">&lt;</button>
+
+    <main class="crm-main">
+      <header class="main-header">
+        <div class="header-title">
+          <span class="eyebrow">Platformă Logistica Vietii</span>
+          <h1>Dashboard Logistica Vietii</h1>
+          <p>Configurare și monitorizare</p>
+        </div>
+      </header>
+
+      <div class="content-scroll">
+        <div class="dashboard-grid">
+          <div class="full-width-section" data-view-panel="main">
+            <div id="statusBanner" class="status-banner">
+              <div class="status-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <span id="statusMessage">Apasă pe Import JSON / CSV sau pe Încarcă Date Prezentare pentru a încărca datele în aplicație.</span>
+            </div>
+          </div>
+
+          <section class="crm-card config-card" data-view-panel="main">
+            <div class="card-header">
+              <div>
+                <span class="card-kicker">Pasul 01</span>
+                <h2>Date Generale</h2>
+              </div>
+            </div>
+            <div class="card-body form-grid">
+              <div class="form-group">
+                <label>Titlu Proiect</label>
+                <input id="titleInput" type="text" placeholder="Ex: Logistica Vieții" />
+              </div>
+              <div class="form-group">
+                <label>Scenariu Activ</label>
+                <input id="scenarioInput" type="text" placeholder="Ex: Scenariul de Bază" />
+              </div>
+              <div class="form-group full-width">
+                <label>Note & Observații</label>
+                <textarea id="notesInput" rows="2" placeholder="Introduceți detalii adiționale..."></textarea>
+              </div>
+            </div>
+          </section>
+
+          <section class="crm-card matrix-config-card" data-view-panel="main">
+            <div class="card-header matrix-header">
+              <div>
+                <span class="card-kicker">Pasul 02</span>
+                <h2>Configurare Matrice</h2>
+              </div>
+              <div class="matrix-dimensions">
+                <div class="dim-input">
+                  <label>Surse (m)</label>
+                  <input id="rowsInput" type="number" min="1" value="3" />
+                </div>
+                <div class="dim-input">
+                  <label>Destinații (n)</label>
+                  <input id="colsInput" type="number" min="1" value="5" />
+                </div>
+                <button id="buildBtn" class="btn-outline">Generează</button>
+              </div>
+            </div>
+            <div class="card-body">
+              <div id="matrixMeta" class="matrix-meta"></div>
+              <div id="matrixEditor" class="matrix-editor"></div>
+            </div>
+          </section>
+
+          <div id="summaryCards" class="summary-cards" data-view-panel="main"></div>
+
+          <section class="crm-card ml-card full-width-section" data-view-panel="doctor-ai">
+                <div class="card-header">
+                  <div>
+                    <span class="card-kicker">Interpretare AI</span>
+                    <h2>Doctor AI</h2>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div id="interpretationPanel" class="interpretation empty-state">
+                    Datele de interpretare vor fi generate după rulare.
+                  </div>
+                </div>
+              </section>
+
+          <section class="crm-card charts-card full-width-section" data-view-panel="charts">
+                <div class="card-header">
+                  <div>
+                    <span class="card-kicker">Analiză vizuală</span>
+                    <h2>Grafice și Analize Vizuale</h2>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div id="chartsGrid" class="charts-grid empty-state">
+                    Graficele vor fi randate aici.
+                  </div>
+                </div>
+              </section>
+
+          <section class="crm-card iterations-card full-width-section" data-view-panel="main">
+                <div class="card-header">
+                  <div>
+                    <span class="card-kicker">REZOLVARE</span>
+                    <h2>Istoric Iterații</h2>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div id="iterationsList" class="iterations-list empty-state">
+                    Detaliile iterațiilor vor apărea aici.
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </main>
+  </div>
+  <script src="app.js?v=2"></script>
+</body>
+
+</html>
