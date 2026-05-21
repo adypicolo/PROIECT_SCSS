@@ -229,3 +229,12 @@ După rulare, proiectul poate afișa:
     </td>
   </tr>
 
+---
+
+## License
+
+Copyright (c) 2026 Adrian Vlad. All rights reserved.
+
+This repository is made publicly available for portfolio and demonstration purposes only.
+
+No part of this codebase may be copied, modified, distributed, reused, incorporated into other projects, or submitted for academic/commercial purposes without explicit written permission from the author.
