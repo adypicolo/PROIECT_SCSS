@@ -1,5 +1,6 @@
 # 🩸 Logistica Vieții — Analiza și Optimizarea Fluxurilor de Distribuție
 
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=adypicolo.PROIECT_SCSS)
 ![Python](https://img.shields.io/badge/Python-3.13-blue?logo=python)
 ![HTML](https://img.shields.io/badge/HTML-e34c26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-264de4?style=for-the-badge&logo=css3&logoColor=white)
@@ -12,7 +13,6 @@
 > 🧠 Model de optimizare inspirat din problema de transport, adaptat pentru tema **Logistica Vieții**  
 > 🩸 Fluxuri • Rețea • Optimizare • Interpretare vizuală
 
-# PROIECT_SCSS ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=adypicolo.PROIECT_SCSS)
 ---
 
 ## 🖼️ Demo
