@@ -12,6 +12,7 @@
 > 🧠 Model de optimizare inspirat din problema de transport, adaptat pentru tema **Logistica Vieții**  
 > 🩸 Fluxuri • Rețea • Optimizare • Interpretare vizuală
 
+![Repo views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/adypicolo/PROIECT_SCSS&title=views)
 ---
 
 ## 🖼️ Demo
